@@ -6,8 +6,14 @@ namespace Program
     {
         static void Main()
         {
-            Console.Write("Hello, my friend!");
-            Console.WriteLine("Hello2");
+            Student[] students = new[]
+            {
+                new Student { FirstName = "Dmitry", LastName = "Makanov", Age = 20 },
+                new Student { FirstName = "Dmitry", LastName = "Korzhitsky", Age = 18 }
+            };
+
+            Student.PrintInfo(students[0]);
+            Student.PrintInfo(students[1]);
         }
     }
 }
