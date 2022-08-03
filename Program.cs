@@ -12,8 +12,10 @@ namespace Program
                 new Student { FirstName = "Dmitry", LastName = "Korzhitsky", Age = 18 }
             };
 
-            Student.PrintInfo(students[0]);
-            Student.PrintInfo(students[1]);
+            foreach (var student in students)
+            {
+                Console.WriteLine(student.ToString());
+            }
         }
     }
 }

@@ -5,9 +5,8 @@ public class Student
 	public string? FirstName;
 	public string? LastName;
 	public int Age;
-
-	public static void PrintInfo(Student student)
+	public override string ToString()
     {
-		Console.WriteLine($"{student.FirstName,10} {student.LastName} ({student.Age} y.o.)");
+		return $"{FirstName,10} {LastName} ({Age} y.o.)";
     }
 }
